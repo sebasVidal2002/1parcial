@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin - Sebastian Vidal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="img/logo.png"></a>
+
+            <div class="search-box">
+                <img src="img/search.png">
+                <input type="text" placeholder="buscar">
+            </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="img/home.png"> <span>Casa</span></a></li>
+                <li><a href="#"><img src="img/network.png"> <span>Mi Red</span></a></li>
+                <li><a href="#"><img src="img/jobs.png"> <span>Empleos</span></a></li>
+                <li><a href="#"><img src="img/message.png"> <span>Mesajes</span></a></li>
+                <li><a href="#"><img src="img/notification.png"> <span>Notificaciones</span></a></li>
+                <li><a href="#"><span>Para Negocios</span></a></li>
+                <li><a href="#"><span>accede a herramientas</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="img/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        
+        <!-- Menu de Perfil- -->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="img/user-1.png">
+                    <div>
+                        <h3>El Marina</h3>
+                        <a href="profile.html">Perfil</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/feedback.png">
+                    <p>Retroalimentacion</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/setting.png">
+                    <p>Configuracion y Privacidad</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/help.png">
+                    <p>Soporte y Ayuda</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="img/display.png">
+                    <p>Accesibilidad</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="img/logout.png">
+                    <p>Salir</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- barra de nav izquierda-->
+
+    <div class="container">
+        <!-- lef sidebar starr -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="img/cover-pic.png" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="img/user-1.png">
+                    <h1>El Marina</h1>
+                    <h3>Jugador Profecional</h3>
+                    <ul>
+                        <li>Vistas de Perfil <span>15</span></li>
+                        <li>VistasXpublicacion<span>261</span></li>
+                      
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="img/premium.png">Tiket Premiun</a>
+                    <a href="#"><img src="img/items.png">Guardados</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>Grupos</h3>
+                <h3>Eventos</h3>            
+                <h3>Hashtag seguidos</h3>
+                <div class="discover-more-link">
+                    <a href="#">Mas</a>
+                </div>
+
+
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+
+        </div>
+
+        <!-- Contenido de Menu -->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="img/user-1.png">
+                    <div class="search-box">
+                        <input type="text" placeholder="Crear publicacion">
+                    </div>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="img/photo.png">Contenido multimedia</li>
+                    <li><img src="img/event.png">Evento</li>
+                    <li><img src="img/video.png">Articulo</li>
+                  
+                </div>
+            </div>
+            
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-3.jpg" alt>
+                    <div>
+                        <h1>Manje Rogelio</h1>
+                        <small>fundador y CEO de LSDlG| Promotor de fornite</small>
+                        <small>hace 2 horas</small>
+                    </div>
+                </div>
+                <p>¡Prepárate para llevar tu juego a nuevas alturas con mi nuevo portátil gamer! Con un procesador potente, gráficos impresionantes y diseño portátil, es perfecto para transmitir en vivo o jugar en cualquier lugar. ¡No te pierdas la oportunidad de elevar tu experiencia de juego con este portátil de última generación! Consíguelo ahora y únete a la revolución gamer.</p>
+                <img src="img/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="img/thumbsup.png">
+                        <img src="img/love.png">
+                        <img src="img/clap.png">
+                        <span class="like-users">Rubius y 69 otros</span>
+
+                    </div>
+                    <div>
+                        <span>31 coments &middot; 12 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                   
+                    <div class="post-activity-link">
+                        <img src="img/like.png">
+                        <span>Recomendar</span>
+                    </div>
+                
+                <div class="post-activity-link">
+                    <img src="img/comment.png">
+                    <span>Comentar</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-4.jpg" alt>
+                    <div>
+                        <h1>AlexXbi11</h1>
+                        <small>Stremer de Andorra</small>
+                        <small>hace 3 horas</small>
+                    </div>
+                </div>Chavales acabo de participar en una partida competitiva de fornite y me fue a poca madre, pero al final porque estaba nevando se me fue el internet.</p>
+                <img src="img/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="img/thumbsup.png">
+                        <img src="img/love.png">
+                        <img src="img/clap.png">
+                        <span class="like-users">Mangel y otros 23</span>
+
+                    </div>
+                    <div>
+                        <span>11 coments &middot; 34 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                   
+                    <div class="post-activity-link">
+                        <img src="img/like.png">
+                        <span>Like</span>
+                    </div>
+                
+                <div class="post-activity-link">
+                    <img src="img/comment.png">
+                    <span>comentar</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/user-2.png" alt>
+                    <div>
+                        <h1>Ruben Doblas</h1>
+                        <small>Mejor Youtuber Hispano Hablante</small>
+                        <small>hace 7 horas</small>
+                    </div>
+                </div>
+                <p>Chicos acabo de aprender a programar en Python , y tambien con HTML /CSS / JAVASCRIP . HAGAN SUS PREGUNTAS:D</p>
+                <img src="img/post-image-3.jpg" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="img/thumbsup.png">
+                        <img src="img/love.png">
+                        <img src="img/clap.png">
+                        <span class="like-users">AlexXbi11 y otros 69</span>
+
+                    </div>
+                    <div>
+                        <span>35 coments &middot; 39 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    
+                    <div class="post-activity-link">
+                        <img src="img/like.png">
+                        <span>Megusta</span>
+                    </div>
+                
+                <div class="post-activity-link">
+                    <img src="img/comment.png">
+                    <span>Comentarios</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="img/usuer-5.jpg" alt>
+                    <div>
+                        <h1>IlloJuan</h1>
+                        <small>Embajador de GTA VI</small>
+                        <small>10 hours ago</small>
+                    </div>
+                </div>
+                <p>shavales , creo que maxi esta embarazada, me va a tocar dejar el GTA VI para vosotros</p>
+                <img src="img/post-image-4.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="img/thumbsup.png">
+                        <img src="img/love.png">
+                        <img src="img/clap.png">
+                        <span class="like-users">Rubius y otros 777</span>
+
+                    </div>
+                    <div>
+                        <span>177 coments &middot; 256 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                   
+                    <div class="post-activity-link">
+                        <img src="img/like.png">
+                        <span>Me gusta</span>
+                    </div>
+                
+                <div class="post-activity-link">
+                    <img src="img/comment.png">
+                    <span>Comentarios</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/share.png">
+                    <span>Compartir</span>
+                </div>
+                <div class="post-activity-link">
+                    <img src="img/send.png">
+                    <span>Enviar</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- BARRA de la derecha -->
+        <div class="right-sidebar">
+            <div class="sidebar-new">
+                <img src="img/more.png" class="info-icon">
+                <h3>Aprender Gaming</h3>
+
+                <a href="#">High demand for skilled gaming talent</a>
+                <span>1d ago &middot; 11,993 gamers</span>
+
+                <a href="#">Careers expanding in the gaming industry</a>
+                <span>19h ago &middot; 2,375 gamers</span>
+
+                <a href="#">Changes in work visas: more opportunities in the gaming sector</a>
+                <span>1d ago &middot; 34,221 gamers</span>
+
+                <a href="#">New gaming release: a must-play experience</a>
+                <span>13h ago &middot; 4,647 gamers</span>
+
+                <a href="#" class="read-more-lik">leer mas</a>
+
+
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot; </small>
+                <p>Embajador de Xiaomi</p>
+                <div>
+                <img src="img/user-1.png">
+                <img src="img/mi-logo.png">
+            </div>
+            
+            <b>Marca y Patrocinada por Xiaomi</b>
+            <a href="#" class="ad-link">Leer mas</a>
+           </div>
+           <div class="sidebar-useful-links">
+            <a href="#">acerca</a>
+            <a href="#">Accesibilidad</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Politica y Privacidad</a>
+            <a href="#">Advertencia</a>
+            <a href="#">Tener App</a>
+            <a href="#">Mas</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png" alt="">
+                <p>Linkedup &#169; 2024. Todos los derechos reservados</p>
+            </div>
+           </div>
+
+        </div>
+    </div>
+    
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+
+
+
+
+<script>
+
+    let sidebarActivity = document.getElementById("sidebarActivity");
+    let moreLink = document.getElementById("showMoreLink");
+
+    function toggleActivity(){
+        sidebarActivity.classList.toggle("open-activity");
+
+        if(sidebarActivity.classList.contains("open-activity")){
+            moreLink.innerHTML = "Sow less <b>-</b>";
+        }else{
+            moreLink.innerHTML = "Sow more <b>+</b>";
+
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>
